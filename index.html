@@ -20,8 +20,9 @@
             </ul>
             <li><a href="#Sectors">2.4 Buoys by Sea Sectors</a></li>
             <ul>
-                <li><a href="#CurrentBuoySectorCount">2.4.1 Current Buoy Counts by Sea Sectors</a></li>
-                <li><a href="#StartingBuoySectorCount">2.4.2 Starting Buoy Counts by Sea Sectors</a></li>
+                <li><a href="#CurrentBuoySectorCount">2.4.1 Current buoy counts by sea sectors</a></li>
+                <li><a href="#StartingBuoySectorCount">2.4.2 Starting buoy counts by sea sectors</a></li>
+                <li><a href="#BuoySectorStatistics">2.4.3 High-level statistics for buoys in sea sectors</a></li>
             </ul>
             <li><a href="#Climate">2.5 Climate observations</a></li>
             <ul>
@@ -4258,8 +4259,8 @@
   </tbody>
 </table></div><div id="BuoyDistAvg" style="text-align: left;"><h3>Averages across all buoys for each month of the year</h3></div>
 <iframe src="images/plots/line_plot_avg_dist.html" width="1200" height="650" style="border:none;"></iframe>
-<div id="Sectors" style="text-align: left;"><h3>Buoys by Sea Sectors</h3></div>
-<div id="CurrentBuoySectorCount" style="text-align: center;"><h2>Current Buoy Counts in Sea Sectors</h2></div>
+<div id="Sectors" style="text-align: center;"><h2>Buoys by Sea Sectors</h2></div>
+<div id="CurrentBuoySectorCount" style="text-align: left;"><h3>Current Buoy Counts in Sea Sectors</h3></div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
@@ -4353,7 +4354,7 @@
       <td>1</td>
     </tr>
   </tbody>
-</table></div><div id="StartingBuoySectorCount" style="text-align: center;"><h2>Starting Buoy Counts in Sea Sectors</h2></div>
+</table></div><div id="StartingBuoySectorCount" style="text-align: left;"><h3>Starting Buoy Counts in Sea Sectors</h3></div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
@@ -4441,12 +4442,288 @@
       <td>1</td>
     </tr>
   </tbody>
-</table></div><div id="Climate" style="text-align: left;"><h3>Climate Observations</h3></div>
+</table></div><div id="BuoySectorStatistics" style="text-align: left;"><h3>Statistics on buoys in sea sectors</h3></div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+        <style>
+            #buoy_avg_by_sea_sector th:nth-child(1), #buoy_avg_by_sea_sector td:nth-child(1) { text-align: left; }
+#buoy_avg_by_sea_sector th:nth-child(2), #buoy_avg_by_sea_sector td:nth-child(2) { text-align: center; }
+#buoy_avg_by_sea_sector th:nth-child(3), #buoy_avg_by_sea_sector td:nth-child(3) { text-align: right; }
+#buoy_avg_by_sea_sector th:nth-child(4), #buoy_avg_by_sea_sector td:nth-child(4) { text-align: right; }
+#buoy_avg_by_sea_sector th:nth-child(5), #buoy_avg_by_sea_sector td:nth-child(5) { text-align: right; }
+#buoy_avg_by_sea_sector th:nth-child(6), #buoy_avg_by_sea_sector td:nth-child(6) { text-align: right; }
+#buoy_avg_by_sea_sector th:nth-child(7), #buoy_avg_by_sea_sector td:nth-child(7) { text-align: right; }
+#buoy_avg_by_sea_sector th:nth-child(8), #buoy_avg_by_sea_sector td:nth-child(8) { text-align: right; }
+
+        </style>            
+        <script>
+            $(document).ready( function () {
+                $('#buoy_avg_by_sea_sector table').DataTable();
+            });
+        </script>
+        <div id="buoy_avg_by_sea_sector"><table border="1" class="dataframe table table-striped sortable">
+  <thead>
+    <tr>
+      <th>Sea Sector (ID)</th>
+      <th>Buoy Count</th>
+      <th>Buoy Daily Drift Mean (km)</th>
+      <th>Buoy Daily Drift Median (km)</th>
+      <th>Buoy Daily Drift Standard Deviation (km)</th>
+      <th>Sea Sector Average Surface Temp (C°)</th>
+      <th>Sea Sector Mininum Surface Temp (C°)</th>
+      <th>Sea Sector Maximum Surface Temp (C°)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Laptev Sea (10)</a></td>
+      <td>1</td>
+      <td>9.126</td>
+      <td>7.943</td>
+      <td>7.605</td>
+      <td>-6.600</td>
+      <td>-21.710</td>
+      <td>9.480</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Arctic Ocean (11)</a></td>
+      <td>1</td>
+      <td>10.417</td>
+      <td>9.616</td>
+      <td>9.050</td>
+      <td>-2.000</td>
+      <td>-7.450</td>
+      <td>2.050</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Beaufort Sea (12)</a></td>
+      <td>51</td>
+      <td>23.626</td>
+      <td>9.243</td>
+      <td>29.711</td>
+      <td>-3.838</td>
+      <td>-15.290</td>
+      <td>6.207</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Beaufort Sea (13)</a></td>
+      <td>93</td>
+      <td>8.727</td>
+      <td>6.463</td>
+      <td>11.014</td>
+      <td>-9.915</td>
+      <td>-23.430</td>
+      <td>5.271</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">The Northwestern Passages (14)</a></td>
+      <td>13</td>
+      <td>9.011</td>
+      <td>5.263</td>
+      <td>21.083</td>
+      <td>-4.367</td>
+      <td>-15.500</td>
+      <td>22.283</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Arctic Ocean (14A)</a></td>
+      <td>1</td>
+      <td>4.906</td>
+      <td>3.782</td>
+      <td>4.544</td>
+      <td>-7.700</td>
+      <td>-26.950</td>
+      <td>18.350</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Davis Strait (15)</a></td>
+      <td>11</td>
+      <td>11.129</td>
+      <td>8.469</td>
+      <td>9.849</td>
+      <td>5.191</td>
+      <td>-2.083</td>
+      <td>15.856</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Labrador Sea (15A)</a></td>
+      <td>13</td>
+      <td>11.216</td>
+      <td>8.586</td>
+      <td>9.107</td>
+      <td>7.700</td>
+      <td>0.557</td>
+      <td>17.703</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Hudson Strait (16A)</a></td>
+      <td>1</td>
+      <td>12.345</td>
+      <td>9.220</td>
+      <td>12.546</td>
+      <td>5.100</td>
+      <td>-5.000</td>
+      <td>12.740</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Arctic Ocean (17)</a></td>
+      <td>286</td>
+      <td>10.540</td>
+      <td>8.311</td>
+      <td>10.475</td>
+      <td>-5.009</td>
+      <td>-16.058</td>
+      <td>5.217</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Arctic Ocean (17A)</a></td>
+      <td>58</td>
+      <td>9.019</td>
+      <td>7.354</td>
+      <td>9.331</td>
+      <td>-6.757</td>
+      <td>-19.082</td>
+      <td>4.115</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Arctic Ocean (18)</a></td>
+      <td>4</td>
+      <td>12.366</td>
+      <td>8.746</td>
+      <td>11.589</td>
+      <td>2.067</td>
+      <td>-14.450</td>
+      <td>16.260</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Labrador Sea (21A)</a></td>
+      <td>1</td>
+      <td>16.705</td>
+      <td>13.999</td>
+      <td>11.294</td>
+      <td>7.400</td>
+      <td>1.250</td>
+      <td>16.090</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">North Atlantic Ocean (23)</a></td>
+      <td>42</td>
+      <td>12.029</td>
+      <td>9.398</td>
+      <td>11.262</td>
+      <td>6.448</td>
+      <td>-2.722</td>
+      <td>16.738</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Inner Seas off the West Coast of Scotland (5)</a></td>
+      <td>46</td>
+      <td>9.902</td>
+      <td>6.838</td>
+      <td>12.335</td>
+      <td>-2.984</td>
+      <td>-16.620</td>
+      <td>10.038</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">The Coastal Waters of Southeast Alaska and British Columbia (54)</a></td>
+      <td>1</td>
+      <td>10.514</td>
+      <td>8.851</td>
+      <td>7.342</td>
+      <td>35.800</td>
+      <td>-4.120</td>
+      <td>35.950</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Bering Sea (55)</a></td>
+      <td>16</td>
+      <td>18.666</td>
+      <td>6.726</td>
+      <td>32.814</td>
+      <td>7.762</td>
+      <td>2.078</td>
+      <td>13.221</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Bering Sea (57)</a></td>
+      <td>7</td>
+      <td>12.416</td>
+      <td>10.455</td>
+      <td>8.872</td>
+      <td>6.450</td>
+      <td>1.128</td>
+      <td>14.248</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Gulf of Alaska (58)</a></td>
+      <td>10</td>
+      <td>74.940</td>
+      <td>8.036</td>
+      <td>115.185</td>
+      <td>1.456</td>
+      <td>-3.247</td>
+      <td>11.420</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">The Coastal Waters of Southeast Alaska and British Columbia (59)</a></td>
+      <td>3</td>
+      <td>11.312</td>
+      <td>10.041</td>
+      <td>7.702</td>
+      <td>16.967</td>
+      <td>-0.967</td>
+      <td>24.853</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Norwegian Sea (6)</a></td>
+      <td>19</td>
+      <td>24.679</td>
+      <td>10.432</td>
+      <td>40.377</td>
+      <td>6.163</td>
+      <td>-2.721</td>
+      <td>17.929</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Norwegian Sea (7)</a></td>
+      <td>6</td>
+      <td>9.298</td>
+      <td>5.164</td>
+      <td>31.621</td>
+      <td>4.540</td>
+      <td>-3.550</td>
+      <td>12.450</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Norwegian Sea (9)</a></td>
+      <td>3</td>
+      <td>24.522</td>
+      <td>17.895</td>
+      <td>75.480</td>
+      <td>4.300</td>
+      <td>-8.740</td>
+      <td>30.170</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Buoy is not within any predefined region (Unknown)</a></td>
+      <td>9</td>
+      <td>12.493</td>
+      <td>10.978</td>
+      <td>10.561</td>
+      <td>0.875</td>
+      <td>-10.683</td>
+      <td>6.780</td>
+    </tr>
+  </tbody>
+</table></div><div id="Climate" style="text-align: center;"><h2>Climate Observations</h2></div>
 <div id="avg_temp_lat" style="text-align: left;"><h3>Average air temperature by latitude range</h3></div>
 <iframe src="images/plots/Air_averages.html" width="1200" height="650" style="border:none;"></iframe>
 <div id="avg_temp_lat" style="text-align: left;"><h3>Average surface temperature by latitude range</h3></div>
 <iframe src="images/plots/Sea Surface_averages.html" width="1200" height="650" style="border:none;"></iframe>
-<img src="images/plots/plot_of_all_sea_sectors.png" alt="Plot of All Sea Sectors" ><div id="Tracking" style="text-align: center;"><h2>Buoy Tracking</h2></div>
+<img src="images/plots/plot_of_all_sea_sectors.png" alt="Plot of All Sea Sectors" ><div id="Tracking" style="text-align: center;"><h2>Buoy Tracking in Observation Period 01-01-2021 to 02-21-2025</h2></div>
 <div><b>Sortable Table for All Buoys</b></div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -4488,31 +4765,31 @@
         <div id="buoy_overview"><table border="1" class="dataframe table table-striped sortable">
   <thead>
     <tr style="text-align: right;">
-      <th>buoy_id</th>
-      <th>first_obs</th>
-      <th>last_obs</th>
-      <th>total_distance_km</th>
-      <th>first_lon</th>
-      <th>first_lat</th>
-      <th>starting_sea_sector_name</th>
-      <th>starting_sea_sector_id</th>
-      <th>starting_status</th>
-      <th>last_lon</th>
-      <th>last_lat</th>
-      <th>current_sea_sector_name</th>
-      <th>current_sea_sector_id</th>
-      <th>current_status</th>
-      <th>buoy_type</th>
-      <th>buoy_type_category</th>
-      <th>avg_air_temp</th>
-      <th>min_air_temp</th>
-      <th>max_air_temp</th>
-      <th>avg_surface_temp</th>
-      <th>min_surface_temp</th>
-      <th>max_surface_temp</th>
-      <th>mean_km</th>
-      <th>median_km</th>
-      <th>std_dev_km</th>
+      <th>Buoy ID</th>
+      <th>First Observation</th>
+      <th>Last Observation</th>
+      <th>Total Distance Traveled (km)</th>
+      <th>Starting Longitude</th>
+      <th>Starting Latitude</th>
+      <th>Starting Sea Sector Name</th>
+      <th>Starting Sea Sector ID</th>
+      <th>Starting Probable Status</th>
+      <th>Current Longitude</th>
+      <th>Current Latitude</th>
+      <th>Current Sea Sector Name</th>
+      <th>Current Sea Sector ID</th>
+      <th>Current Probable Status</th>
+      <th>Buoy Type</th>
+      <th>Buoy Type Category</th>
+      <th>Average Air Temp (C°)</th>
+      <th>Minimum Air Temperature (C°)</th>
+      <th>Maximum Air Temperature (C°)</th>
+      <th>Average Surface Temperature (C°)</th>
+      <th>Minimum Surface_Temperature (C°))</th>
+      <th>Maximum Surface Temperature (C°)</th>
+      <th>Daily Distance Mean (km)</th>
+      <th>Daily Median (km)</th>
+      <th>Daily Standard Deviation (km)</th>
     </tr>
   </thead>
   <tbody>
