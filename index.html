@@ -4302,24 +4302,24 @@
 </table></div><div id="BuoyDistAvg" style="text-align: left;"><h3>Averages across all buoys for each month of the year</h3></div>
 <iframe src="images/plots/line_plot_avg_dist.html" width="1200" height="650" style="border:none;"></iframe>
 <div id="Sectors" style="text-align: center;"><h2>Buoys by Sea Sectors</h2></div>
-<div id="CurrentBuoySectorCount" style="text-align: left;"><h3>Current Buoy Counts in Sea Sectors</h3></div>
+<div id="StartingBuoySectorCount" style="text-align: left;"><h3>Starting Buoy Counts in Sea Sectors</h3></div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
         <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
         <style>
-            #current_sea_sector_buoy_count th:nth-child(1), #current_sea_sector_buoy_count td:nth-child(1) { text-align: left; }
-#current_sea_sector_buoy_count th:nth-child(2), #current_sea_sector_buoy_count td:nth-child(2) { text-align: right; }
-#current_sea_sector_buoy_count th:nth-child(3), #current_sea_sector_buoy_count td:nth-child(3) { text-align: left; }
-#current_sea_sector_buoy_count th:nth-child(4), #current_sea_sector_buoy_count td:nth-child(4) { text-align: right; }
+            #starting_sea_sector_buoy_count th:nth-child(1), #starting_sea_sector_buoy_count td:nth-child(1) { text-align: left; }
+#starting_sea_sector_buoy_count th:nth-child(2), #starting_sea_sector_buoy_count td:nth-child(2) { text-align: right; }
+#starting_sea_sector_buoy_count th:nth-child(3), #starting_sea_sector_buoy_count td:nth-child(3) { text-align: left; }
+#starting_sea_sector_buoy_count th:nth-child(4), #starting_sea_sector_buoy_count td:nth-child(4) { text-align: right; }
 
         </style>            
         <script>
             $(document).ready( function () {
-                $('#current_sea_sector_buoy_count table').DataTable();
+                $('#starting_sea_sector_buoy_count table').DataTable();
             });
         </script>
-        <div id="current_sea_sector_buoy_count"><table border="1" class="dataframe table table-striped sortable">
+        <div id="starting_sea_sector_buoy_count"><table border="1" class="dataframe table table-striped sortable">
   <thead>
     <tr>
       <th>Sea Sector Name (ID)</th>
@@ -4331,72 +4331,66 @@
   <tbody>
     <tr>
       <td><a href="images/plots/17_current_buoys.html" target="_blank">Arctic Ocean (17)</a></td>
-      <td data-order="132">132</td>
+      <td data-order="247">247</td>
       <td><a href="images/plots/13_current_buoys.html" target="_blank">Beaufort Sea (13)</a></td>
-      <td data-order="71">71</td>
+      <td data-order="65">65</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Lincoln Sea (17A)</a></td>
-      <td data-order="56">56</td>
-      <td><a href="images/plots/12_current_buoys.html" target="_blank">Chukchi Sea (12)</a></td>
-      <td data-order="47">47</td>
-    </tr>
-    <tr>
-      <td><a href="images/plots/5_current_buoys.html" target="_blank">Greenland Sea (5)</a></td>
-      <td data-order="39">39</td>
       <td><a href="images/plots/23_current_buoys.html" target="_blank">North Atlantic Ocean (23)</a></td>
-      <td data-order="29">29</td>
+      <td data-order="22">22</td>
+      <td><a href="images/plots/55_current_buoys.html" target="_blank">Bering Sea (55)</a></td>
+      <td data-order="15">15</td>
     </tr>
     <tr>
-      <td><a href="images/plots/6_current_buoys.html" target="_blank">Norwegian Sea (6)</a></td>
-      <td data-order="16">16</td>
-      <td><a href="images/plots/55_current_buoys.html" target="_blank">Bering Sea (55)</a></td>
+      <td><a href="images/plots/14_current_buoys.html" target="_blank">The Northwestern Passages (14)</a></td>
+      <td data-order="12">12</td>
+      <td><a href="images/plots/5_current_buoys.html" target="_blank">Greenland Sea (5)</a></td>
+      <td data-order="12">12</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/15A_current_buoys.html" target="_blank">Labrador Sea (15A)</a></td>
+      <td data-order="11">11</td>
+      <td><a href="images/plots/58_current_buoys.html" target="_blank">Gulf of Alaska (58)</a></td>
+      <td data-order="10">10</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/12_current_buoys.html" target="_blank">Chukchi Sea (12)</a></td>
+      <td data-order="9">9</td>
+      <td><a href="images/plots/15_current_buoys.html" target="_blank">Davis Strait (15)</a></td>
       <td data-order="8">8</td>
     </tr>
     <tr>
-      <td><a href="images/plots/7_current_buoys.html" target="_blank">Barentsz Sea (7)</a></td>
+      <td><a href="images/plots/Unknown_current_buoys.html" target="_blank">Buoy is not within any predefined region (Unknown)</a></td>
       <td data-order="7">7</td>
-      <td><a href="images/plots/14_current_buoys.html" target="_blank">The Northwestern Passages (14)</a></td>
-      <td data-order="5">5</td>
-    </tr>
-    <tr>
-      <td><a href="images/plots/15_current_buoys.html" target="_blank">Davis Strait (15)</a></td>
-      <td data-order="5">5</td>
-      <td><a href="images/plots/15A_current_buoys.html" target="_blank">Labrador Sea (15A)</a></td>
-      <td data-order="4">4</td>
+      <td><a href="images/plots/6_current_buoys.html" target="_blank">Norwegian Sea (6)</a></td>
+      <td data-order="6">6</td>
     </tr>
     <tr>
       <td><a href="images/plots/57_current_buoys.html" target="_blank">North Pacific Ocean (57)</a></td>
-      <td data-order="4">4</td>
-      <td><a href="images/plots/18_current_buoys.html" target="_blank">Inner Seas off the West Coast of Scotland (18)</a></td>
-      <td data-order="3">3</td>
-    </tr>
-    <tr>
+      <td data-order="5">5</td>
       <td><a href="images/plots/9_current_buoys.html" target="_blank">Kara Sea (9)</a></td>
       <td data-order="2">2</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/18_current_buoys.html" target="_blank">Inner Seas off the West Coast of Scotland (18)</a></td>
+      <td data-order="1">1</td>
       <td><a href="images/plots/59_current_buoys.html" target="_blank">The Coastal Waters of Southeast Alaska and British Columbia (59)</a></td>
-      <td data-order="2">2</td>
-    </tr>
-    <tr>
-      <td><a href="images/plots/Unknown_current_buoys.html" target="_blank">Buoy is not within any predefined region (Unknown)</a></td>
-      <td data-order="2">2</td>
-      <td><a href="images/plots/14A_current_buoys.html" target="_blank">Baffin Bay (14A)</a></td>
-      <td data-order="1">1</td>
-    </tr>
-    <tr>
-      <td><a href="images/plots/54_current_buoys.html" target="_blank">Sea of Okhotsk (54)</a></td>
-      <td data-order="1">1</td>
-      <td><a href="images/plots/21A_current_buoys.html" target="_blank">Celtic Sea (21A)</a></td>
       <td data-order="1">1</td>
     </tr>
     <tr>
       <td><a href="images/plots/16A_current_buoys.html" target="_blank">Hudson Strait (16A)</a></td>
       <td data-order="1">1</td>
-      <td><a href="images/plots/11_current_buoys.html" target="_blank">East Siberian Sea (11)</a></td>
+      <td><a href="images/plots/7_current_buoys.html" target="_blank">Barentsz Sea (7)</a></td>
+      <td data-order="1">1</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/10_current_buoys.html" target="_blank">Laptev Sea (10)</a></td>
+      <td data-order="1">1</td>
+      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Lincoln Sea (17A)</a></td>
       <td data-order="1">1</td>
     </tr>
   </tbody>
-</table></div><div id="StartingBuoySectorCount" style="text-align: left;"><h3>Starting Buoy Counts in Sea Sectors</h3></div>
+</table></div><div id="CurrentBuoySectorCount" style="text-align: left;"><h3>Current Buoy Counts in Sea Sectors</h3></div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
@@ -4425,62 +4419,68 @@
   <tbody>
     <tr>
       <td><a href="images/plots/17_starting_buoys.html" target="_blank">Arctic Ocean (17)</a></td>
-      <td data-order="247">247</td>
+      <td data-order="132">132</td>
       <td><a href="images/plots/13_starting_buoys.html" target="_blank">Beaufort Sea (13)</a></td>
-      <td data-order="65">65</td>
+      <td data-order="71">71</td>
     </tr>
     <tr>
-      <td><a href="images/plots/23_starting_buoys.html" target="_blank">North Atlantic Ocean (23)</a></td>
-      <td data-order="22">22</td>
-      <td><a href="images/plots/55_starting_buoys.html" target="_blank">Bering Sea (55)</a></td>
-      <td data-order="15">15</td>
-    </tr>
-    <tr>
-      <td><a href="images/plots/14_starting_buoys.html" target="_blank">The Northwestern Passages (14)</a></td>
-      <td data-order="12">12</td>
-      <td><a href="images/plots/5_starting_buoys.html" target="_blank">Greenland Sea (5)</a></td>
-      <td data-order="12">12</td>
-    </tr>
-    <tr>
-      <td><a href="images/plots/15A_starting_buoys.html" target="_blank">Labrador Sea (15A)</a></td>
-      <td data-order="11">11</td>
-      <td><a href="images/plots/58_starting_buoys.html" target="_blank">Gulf of Alaska (58)</a></td>
-      <td data-order="10">10</td>
-    </tr>
-    <tr>
+      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Lincoln Sea (17A)</a></td>
+      <td data-order="56">56</td>
       <td><a href="images/plots/12_starting_buoys.html" target="_blank">Chukchi Sea (12)</a></td>
-      <td data-order="9">9</td>
-      <td><a href="images/plots/15_starting_buoys.html" target="_blank">Davis Strait (15)</a></td>
+      <td data-order="47">47</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/5_starting_buoys.html" target="_blank">Greenland Sea (5)</a></td>
+      <td data-order="39">39</td>
+      <td><a href="images/plots/23_starting_buoys.html" target="_blank">North Atlantic Ocean (23)</a></td>
+      <td data-order="29">29</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/6_starting_buoys.html" target="_blank">Norwegian Sea (6)</a></td>
+      <td data-order="16">16</td>
+      <td><a href="images/plots/55_starting_buoys.html" target="_blank">Bering Sea (55)</a></td>
       <td data-order="8">8</td>
     </tr>
     <tr>
-      <td><a href="images/plots/Unknown_starting_buoys.html" target="_blank">Buoy is not within any predefined region (Unknown)</a></td>
+      <td><a href="images/plots/7_starting_buoys.html" target="_blank">Barentsz Sea (7)</a></td>
       <td data-order="7">7</td>
-      <td><a href="images/plots/6_starting_buoys.html" target="_blank">Norwegian Sea (6)</a></td>
-      <td data-order="6">6</td>
+      <td><a href="images/plots/14_starting_buoys.html" target="_blank">The Northwestern Passages (14)</a></td>
+      <td data-order="5">5</td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/15_starting_buoys.html" target="_blank">Davis Strait (15)</a></td>
+      <td data-order="5">5</td>
+      <td><a href="images/plots/15A_starting_buoys.html" target="_blank">Labrador Sea (15A)</a></td>
+      <td data-order="4">4</td>
     </tr>
     <tr>
       <td><a href="images/plots/57_starting_buoys.html" target="_blank">North Pacific Ocean (57)</a></td>
-      <td data-order="5">5</td>
+      <td data-order="4">4</td>
+      <td><a href="images/plots/18_starting_buoys.html" target="_blank">Inner Seas off the West Coast of Scotland (18)</a></td>
+      <td data-order="3">3</td>
+    </tr>
+    <tr>
       <td><a href="images/plots/9_starting_buoys.html" target="_blank">Kara Sea (9)</a></td>
+      <td data-order="2">2</td>
+      <td><a href="images/plots/59_starting_buoys.html" target="_blank">The Coastal Waters of Southeast Alaska and British Columbia (59)</a></td>
       <td data-order="2">2</td>
     </tr>
     <tr>
-      <td><a href="images/plots/18_starting_buoys.html" target="_blank">Inner Seas off the West Coast of Scotland (18)</a></td>
+      <td><a href="images/plots/Unknown_starting_buoys.html" target="_blank">Buoy is not within any predefined region (Unknown)</a></td>
+      <td data-order="2">2</td>
+      <td><a href="images/plots/14A_starting_buoys.html" target="_blank">Baffin Bay (14A)</a></td>
       <td data-order="1">1</td>
-      <td><a href="images/plots/59_starting_buoys.html" target="_blank">The Coastal Waters of Southeast Alaska and British Columbia (59)</a></td>
+    </tr>
+    <tr>
+      <td><a href="images/plots/54_starting_buoys.html" target="_blank">Sea of Okhotsk (54)</a></td>
+      <td data-order="1">1</td>
+      <td><a href="images/plots/21A_starting_buoys.html" target="_blank">Celtic Sea (21A)</a></td>
       <td data-order="1">1</td>
     </tr>
     <tr>
       <td><a href="images/plots/16A_starting_buoys.html" target="_blank">Hudson Strait (16A)</a></td>
       <td data-order="1">1</td>
-      <td><a href="images/plots/7_starting_buoys.html" target="_blank">Barentsz Sea (7)</a></td>
-      <td data-order="1">1</td>
-    </tr>
-    <tr>
-      <td><a href="images/plots/10_starting_buoys.html" target="_blank">Laptev Sea (10)</a></td>
-      <td data-order="1">1</td>
-      <td><a href="images/plots/17A_starting_buoys.html" target="_blank">Lincoln Sea (17A)</a></td>
+      <td><a href="images/plots/11_starting_buoys.html" target="_blank">East Siberian Sea (11)</a></td>
       <td data-order="1">1</td>
     </tr>
   </tbody>
@@ -4540,7 +4540,7 @@
   </thead>
   <tbody>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Laptev Sea (10)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Laptev Sea (10)</a></td>
       <td data-order="1">1</td>
       <td data-order="0">0</td>
       <td data-order="9.126">9.126</td>
@@ -4550,7 +4550,7 @@
       <td data-order="84.429">84.429</td>
       <td></td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-6.625">-6.625</td>
@@ -4560,7 +4560,7 @@
       <td data-order="9.48">9.48</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Arctic Ocean (11)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Arctic Ocean (11)</a></td>
       <td data-order="0">0</td>
       <td data-order="1">1</td>
       <td data-order="10.417">10.417</td>
@@ -4570,7 +4570,7 @@
       <td data-order="70.617">70.617</td>
       <td></td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-1.959">-1.959</td>
@@ -4580,7 +4580,7 @@
       <td data-order="2.05">2.05</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Beaufort Sea (12)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Beaufort Sea (12)</a></td>
       <td data-order="9">9</td>
       <td data-order="47">47</td>
       <td data-order="23.465">23.465</td>
@@ -4590,7 +4590,7 @@
       <td data-order="0.001">0.001</td>
       <td data-order="2.071">2.071</td>
       <td data-order="0.911">0.911</td>
-      <td data-order="9.107">9.107</td>
+      <td data-order="12.622">12.622</td>
       <td></td>
       <td></td>
       <td data-order="-3.899">-3.899</td>
@@ -4600,7 +4600,7 @@
       <td data-order="29.69">29.69</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Beaufort Sea (13)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Beaufort Sea (13)</a></td>
       <td data-order="65">65</td>
       <td data-order="71">71</td>
       <td data-order="8.060">8.060</td>
@@ -4610,7 +4610,7 @@
       <td data-order="0.0">0.0</td>
       <td data-order="-5.703">-5.703</td>
       <td data-order="-3.926">-3.926</td>
-      <td data-order="10.706">10.706</td>
+      <td data-order="11.518">11.518</td>
       <td></td>
       <td></td>
       <td data-order="-9.975">-9.975</td>
@@ -4620,7 +4620,7 @@
       <td data-order="38.8">38.8</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">The Northwestern Passages (14)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">The Northwestern Passages (14)</a></td>
       <td data-order="12">12</td>
       <td data-order="5">5</td>
       <td data-order="8.986">8.986</td>
@@ -4630,7 +4630,7 @@
       <td data-order="0.322">0.322</td>
       <td data-order="-11.027">-11.027</td>
       <td data-order="-11.2">-11.2</td>
-      <td data-order="10.759">10.759</td>
+      <td data-order="13.383">13.383</td>
       <td data-order="-37.1">-37.1</td>
       <td data-order="24.0">24.0</td>
       <td data-order="-4.377">-4.377</td>
@@ -4640,7 +4640,7 @@
       <td data-order="25.94">25.94</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Arctic Ocean (14A)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Arctic Ocean (14A)</a></td>
       <td data-order="0">0</td>
       <td data-order="1">1</td>
       <td data-order="4.906">4.906</td>
@@ -4650,7 +4650,7 @@
       <td data-order="36.999">36.999</td>
       <td></td>
       <td></td>
-      <td data-order="28.368">28.368</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-7.734">-7.734</td>
@@ -4660,7 +4660,7 @@
       <td data-order="18.35">18.35</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Davis Strait (15)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Davis Strait (15)</a></td>
       <td data-order="8">8</td>
       <td data-order="5">5</td>
       <td data-order="10.472">10.472</td>
@@ -4670,7 +4670,7 @@
       <td data-order="0.027">0.027</td>
       <td data-order="-7.778">-7.778</td>
       <td data-order="-6.95">-6.95</td>
-      <td data-order="9.484">9.484</td>
+      <td data-order="8.24">8.24</td>
       <td></td>
       <td></td>
       <td data-order="4.340">4.340</td>
@@ -4680,7 +4680,7 @@
       <td data-order="35.94">35.94</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Labrador Sea (15A)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Labrador Sea (15A)</a></td>
       <td data-order="11">11</td>
       <td data-order="4">4</td>
       <td data-order="11.214">11.214</td>
@@ -4690,7 +4690,7 @@
       <td data-order="0.0">0.0</td>
       <td data-order="4.969">4.969</td>
       <td data-order="4.19">4.19</td>
-      <td data-order="8.325">8.325</td>
+      <td data-order="2.972">2.972</td>
       <td></td>
       <td></td>
       <td data-order="7.716">7.716</td>
@@ -4700,7 +4700,7 @@
       <td data-order="35.94">35.94</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Hudson Strait (16A)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Hudson Strait (16A)</a></td>
       <td data-order="1">1</td>
       <td data-order="1">1</td>
       <td data-order="12.345">12.345</td>
@@ -4710,7 +4710,7 @@
       <td data-order="126.636">126.636</td>
       <td></td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="5.144">5.144</td>
@@ -4720,7 +4720,7 @@
       <td data-order="12.74">12.74</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Arctic Ocean (17)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Arctic Ocean (17)</a></td>
       <td data-order="247">247</td>
       <td data-order="132">132</td>
       <td data-order="10.519">10.519</td>
@@ -4730,7 +4730,7 @@
       <td data-order="100.392">100.392</td>
       <td data-order="-6.788">-6.788</td>
       <td data-order="-5.939">-5.939</td>
-      <td data-order="8.779">8.779</td>
+      <td data-order="8.4">8.4</td>
       <td data-order="-60.0">-60.0</td>
       <td data-order="40.0">40.0</td>
       <td data-order="-5.043">-5.043</td>
@@ -4740,7 +4740,7 @@
       <td data-order="39.68">39.68</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Arctic Ocean (17A)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Arctic Ocean (17A)</a></td>
       <td data-order="1">1</td>
       <td data-order="56">56</td>
       <td data-order="8.900">8.900</td>
@@ -4750,7 +4750,7 @@
       <td data-order="112.754">112.754</td>
       <td data-order="-11.936">-11.936</td>
       <td data-order="-12.047">-12.047</td>
-      <td data-order="8.432">8.432</td>
+      <td data-order="8.638">8.638</td>
       <td></td>
       <td></td>
       <td data-order="-6.750">-6.750</td>
@@ -4760,7 +4760,7 @@
       <td></td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Arctic Ocean (18)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Arctic Ocean (18)</a></td>
       <td data-order="1">1</td>
       <td data-order="3">3</td>
       <td data-order="12.338">12.338</td>
@@ -4770,7 +4770,7 @@
       <td data-order="161.34">161.34</td>
       <td data-order="-4.714">-4.714</td>
       <td data-order="-2.105">-2.105</td>
-      <td data-order="10.652">10.652</td>
+      <td data-order="10.0">10.0</td>
       <td data-order="-41.12">-41.12</td>
       <td data-order="16.4">16.4</td>
       <td data-order="2.073">2.073</td>
@@ -4780,7 +4780,7 @@
       <td data-order="21.43">21.43</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Labrador Sea (21A)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Labrador Sea (21A)</a></td>
       <td data-order="0">0</td>
       <td data-order="1">1</td>
       <td data-order="16.705">16.705</td>
@@ -4790,7 +4790,7 @@
       <td data-order="60.937">60.937</td>
       <td></td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="7.449">7.449</td>
@@ -4800,7 +4800,7 @@
       <td data-order="16.09">16.09</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">North Atlantic Ocean (23)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">North Atlantic Ocean (23)</a></td>
       <td data-order="22">22</td>
       <td data-order="29">29</td>
       <td data-order="12.033">12.033</td>
@@ -4810,7 +4810,7 @@
       <td data-order="0.601">0.601</td>
       <td data-order="-6.971">-6.971</td>
       <td data-order="-4.355">-4.355</td>
-      <td data-order="9.529">9.529</td>
+      <td data-order="9.492">9.492</td>
       <td></td>
       <td></td>
       <td data-order="6.446">6.446</td>
@@ -4820,7 +4820,7 @@
       <td data-order="35.95">35.95</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Inner Seas off the West Coast of Scotland (5)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Inner Seas off the West Coast of Scotland (5)</a></td>
       <td data-order="12">12</td>
       <td data-order="39">39</td>
       <td data-order="10.044">10.044</td>
@@ -4830,7 +4830,7 @@
       <td data-order="0.011">0.011</td>
       <td data-order="-10.501">-10.501</td>
       <td data-order="-9.905">-9.905</td>
-      <td data-order="9.671">9.671</td>
+      <td data-order="8.416">8.416</td>
       <td data-order="-41.12">-41.12</td>
       <td data-order="11.7">11.7</td>
       <td data-order="-3.253">-3.253</td>
@@ -4840,7 +4840,7 @@
       <td></td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">The Coastal Waters of Southeast Alaska and British Columbia (54)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">The Coastal Waters of Southeast Alaska and British Columbia (54)</a></td>
       <td data-order="0">0</td>
       <td data-order="1">1</td>
       <td data-order="10.514">10.514</td>
@@ -4850,7 +4850,7 @@
       <td data-order="42.833">42.833</td>
       <td></td>
       <td></td>
-      <td data-order="9.001">9.001</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="35.838">35.838</td>
@@ -4860,7 +4860,7 @@
       <td data-order="35.95">35.95</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Bering Sea (55)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Bering Sea (55)</a></td>
       <td data-order="15">15</td>
       <td data-order="8">8</td>
       <td data-order="18.659">18.659</td>
@@ -4870,7 +4870,7 @@
       <td data-order="0.025">0.025</td>
       <td></td>
       <td></td>
-      <td data-order="9.128">9.128</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="7.737">7.737</td>
@@ -4880,7 +4880,7 @@
       <td data-order="28.8">28.8</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Bering Sea (57)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Bering Sea (57)</a></td>
       <td data-order="5">5</td>
       <td data-order="4">4</td>
       <td data-order="12.563">12.563</td>
@@ -4890,7 +4890,7 @@
       <td data-order="0.0">0.0</td>
       <td></td>
       <td></td>
-      <td data-order="9.427">9.427</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="6.431">6.431</td>
@@ -4900,7 +4900,7 @@
       <td data-order="31.89">31.89</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Gulf of Alaska (58)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Gulf of Alaska (58)</a></td>
       <td data-order="10">10</td>
       <td data-order="0">0</td>
       <td data-order="74.905">74.905</td>
@@ -4910,7 +4910,7 @@
       <td data-order="0.001">0.001</td>
       <td data-order="-2.256">-2.256</td>
       <td data-order="-1.475">-1.475</td>
-      <td data-order="7.706">7.706</td>
+      <td data-order="8.637">8.637</td>
       <td data-order="-36.9">-36.9</td>
       <td data-order="20.6">20.6</td>
       <td data-order="1.412">1.412</td>
@@ -4920,7 +4920,7 @@
       <td data-order="26.44">26.44</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">The Coastal Waters of Southeast Alaska and British Columbia (59)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">The Coastal Waters of Southeast Alaska and British Columbia (59)</a></td>
       <td data-order="1">1</td>
       <td data-order="2">2</td>
       <td data-order="11.795">11.795</td>
@@ -4930,7 +4930,7 @@
       <td data-order="42.833">42.833</td>
       <td></td>
       <td></td>
-      <td data-order="10.350">10.350</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="16.970">16.970</td>
@@ -4940,7 +4940,7 @@
       <td data-order="35.95">35.95</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Norwegian Sea (6)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Norwegian Sea (6)</a></td>
       <td data-order="6">6</td>
       <td data-order="16">16</td>
       <td data-order="25.098">25.098</td>
@@ -4950,7 +4950,7 @@
       <td data-order="119.984">119.984</td>
       <td data-order="-5.911">-5.911</td>
       <td data-order="-2.5">-2.5</td>
-      <td data-order="8.581">8.581</td>
+      <td data-order="12.76">12.76</td>
       <td></td>
       <td></td>
       <td data-order="6.665">6.665</td>
@@ -4960,7 +4960,7 @@
       <td data-order="35.95">35.95</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Norwegian Sea (7)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Norwegian Sea (7)</a></td>
       <td data-order="1">1</td>
       <td data-order="7">7</td>
       <td data-order="10.461">10.461</td>
@@ -4970,7 +4970,7 @@
       <td data-order="0.014">0.014</td>
       <td></td>
       <td></td>
-      <td data-order="8.689">8.689</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="3.328">3.328</td>
@@ -4980,7 +4980,7 @@
       <td data-order="16.95">16.95</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Norwegian Sea (9)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Norwegian Sea (9)</a></td>
       <td data-order="2">2</td>
       <td data-order="2">2</td>
       <td data-order="24.522">24.522</td>
@@ -4990,7 +4990,7 @@
       <td data-order="2954.371">2954.371</td>
       <td></td>
       <td></td>
-      <td data-order="9.462">9.462</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="4.312">4.312</td>
@@ -5000,7 +5000,7 @@
       <td data-order="35.94">35.94</td>
     </tr>
     <tr>
-      <td><a href="images/plots/17A_current_buoys.html" target="_blank">Buoy is not within any predefined region (Unknown)</a></td>
+      <td><a href="images/plots/11_current_buoys.html" target="_blank">Buoy is not within any predefined region (Unknown)</a></td>
       <td data-order="7">7</td>
       <td data-order="2">2</td>
       <td data-order="12.487">12.487</td>
@@ -5010,7 +5010,7 @@
       <td data-order="32.041">32.041</td>
       <td data-order="21.111">21.111</td>
       <td data-order="20.35">20.35</td>
-      <td data-order="10.213">10.213</td>
+      <td data-order="13.047">13.047</td>
       <td></td>
       <td></td>
       <td data-order="0.888">0.888</td>
@@ -5126,7 +5126,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -5159,7 +5159,7 @@
       <td>Other</td>
       <td data-order="-5.726">-5.726</td>
       <td data-order="-2.35">-2.35</td>
-      <td data-order="7.390">7.390</td>
+      <td data-order="7.39">7.39</td>
       <td data-order="-21.71">-21.71</td>
       <td data-order="2.67">2.67</td>
       <td>No surface temperature sensors</td>
@@ -5192,7 +5192,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.972">2.972</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="0.46">0.46</td>
@@ -5522,7 +5522,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.890">3.890</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -5588,7 +5588,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.383">13.383</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-10.481">-10.481</td>
@@ -5687,7 +5687,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.383">13.383</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-0.998">-0.998</td>
@@ -5720,7 +5720,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.383">13.383</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-1.694">-1.694</td>
@@ -5951,7 +5951,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.849">9.849</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="4.46">4.46</td>
@@ -5984,7 +5984,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="9.047">9.047</td>
@@ -6017,7 +6017,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="0.253">0.253</td>
@@ -6050,7 +6050,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="4.786">4.786</td>
@@ -6083,7 +6083,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="9.491">9.491</td>
@@ -6116,7 +6116,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="4.602">4.602</td>
@@ -6149,7 +6149,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.001">9.001</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="5.295">5.295</td>
@@ -6182,7 +6182,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.849">9.849</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="6.462">6.462</td>
@@ -6215,7 +6215,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.938">3.938</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="7.411">7.411</td>
@@ -6248,7 +6248,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.938">3.938</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="4.811">4.811</td>
@@ -6281,7 +6281,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.938">3.938</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="5.185">5.185</td>
@@ -6314,7 +6314,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.938">3.938</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="9.206">9.206</td>
@@ -6347,7 +6347,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.938">3.938</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="4.62">4.62</td>
@@ -6380,7 +6380,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.938">3.938</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="7.128">7.128</td>
@@ -6413,7 +6413,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="6.974">6.974</td>
@@ -6512,7 +6512,7 @@
       <td>Snow Buoy</td>
       <td data-order="-8.463">-8.463</td>
       <td data-order="-6.8">-6.8</td>
-      <td data-order="5.830">5.830</td>
+      <td data-order="5.83">5.83</td>
       <td data-order="-21.7">-21.7</td>
       <td data-order="1.2">1.2</td>
       <td data-order="-0.344">-0.344</td>
@@ -6743,7 +6743,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="28.368">28.368</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-6.17">-6.17</td>
@@ -6776,7 +6776,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="28.368">28.368</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-7.734">-7.734</td>
@@ -6809,7 +6809,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.938">3.938</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-8.553">-8.553</td>
@@ -6842,7 +6842,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.001">9.001</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="35.838">35.838</td>
@@ -6875,7 +6875,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.938">3.938</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="10.711">10.711</td>
@@ -6908,7 +6908,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.938">3.938</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="8.648">8.648</td>
@@ -6941,7 +6941,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.057">6.057</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="9.874">9.874</td>
@@ -6974,7 +6974,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.849">9.849</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="7.221">7.221</td>
@@ -7007,7 +7007,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.001">9.001</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="8.629">8.629</td>
@@ -7040,7 +7040,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="8.483">8.483</td>
@@ -7073,7 +7073,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.001">9.001</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="6.145">6.145</td>
@@ -7106,7 +7106,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.001">9.001</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="8.155">8.155</td>
@@ -7139,7 +7139,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-6.625">-6.625</td>
@@ -7172,7 +7172,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="7.390">7.390</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-4.004">-4.004</td>
@@ -7205,7 +7205,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="7.390">7.390</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.642">-5.642</td>
@@ -7238,7 +7238,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="7.390">7.390</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-3.176">-3.176</td>
@@ -7271,7 +7271,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="7.390">7.390</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.431">-5.431</td>
@@ -7304,7 +7304,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="28.368">28.368</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-8.0">-8.0</td>
@@ -7337,7 +7337,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.564">10.564</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-3.665">-3.665</td>
@@ -7370,7 +7370,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.938">3.938</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="6.119">6.119</td>
@@ -7403,7 +7403,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.938">3.938</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -7436,7 +7436,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.938">3.938</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="8.705">8.705</td>
@@ -7469,7 +7469,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.938">3.938</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="8.559">8.559</td>
@@ -7502,7 +7502,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.938">3.938</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="11.241">11.241</td>
@@ -7535,7 +7535,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="5.451">5.451</td>
@@ -7568,7 +7568,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="9.127">9.127</td>
@@ -7601,7 +7601,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="8.837">8.837</td>
@@ -7634,7 +7634,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="6.48">6.48</td>
@@ -7667,7 +7667,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="5.144">5.144</td>
@@ -7700,7 +7700,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="7.449">7.449</td>
@@ -7733,7 +7733,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="10.867">10.867</td>
@@ -7766,7 +7766,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="7.555">7.555</td>
@@ -7799,7 +7799,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="6.506">6.506</td>
@@ -7832,7 +7832,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="7.421">7.421</td>
@@ -7865,7 +7865,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="11.04">11.04</td>
@@ -7898,7 +7898,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.001">9.001</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="9.054">9.054</td>
@@ -7931,7 +7931,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="4.009">4.009</td>
@@ -7964,7 +7964,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="3.534">3.534</td>
@@ -7997,7 +7997,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="4.889">4.889</td>
@@ -8030,7 +8030,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="5.013">5.013</td>
@@ -8063,7 +8063,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.849">9.849</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="4.792">4.792</td>
@@ -8096,7 +8096,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.001">9.001</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="5.968">5.968</td>
@@ -8129,7 +8129,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.001">9.001</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="6.154">6.154</td>
@@ -8162,7 +8162,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.564">10.564</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-8.437">-8.437</td>
@@ -8228,7 +8228,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="5.695">5.695</td>
@@ -8261,7 +8261,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="7.443">7.443</td>
@@ -8393,7 +8393,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.001">9.001</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="6.126">6.126</td>
@@ -8492,7 +8492,7 @@
       <td>SVP</td>
       <td data-order="-5.911">-5.911</td>
       <td data-order="-2.5">-2.5</td>
-      <td data-order="12.760">12.760</td>
+      <td data-order="12.76">12.76</td>
       <td data-order="-37.6">-37.6</td>
       <td data-order="13.9">13.9</td>
       <td data-order="-2.792">-2.792</td>
@@ -8525,7 +8525,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.001">9.001</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="8.918">8.918</td>
@@ -8591,7 +8591,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="7.390">7.390</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-2.824">-2.824</td>
@@ -8624,7 +8624,7 @@
       <td>Ice Cadet</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="7.390">7.390</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-3.424">-3.424</td>
@@ -8657,7 +8657,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-8.441">-8.441</td>
@@ -8690,7 +8690,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="7.390">7.390</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-4.612">-4.612</td>
@@ -8723,7 +8723,7 @@
       <td>Ice Cadet</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.001">9.001</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-11.432">-11.432</td>
@@ -8756,7 +8756,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.119">9.119</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="0.722">0.722</td>
@@ -8789,7 +8789,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -8822,7 +8822,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="7.390">7.390</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="0.223">0.223</td>
@@ -8855,7 +8855,7 @@
       <td>Ice Cadet</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="0.46">0.46</td>
@@ -8888,7 +8888,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-19.963">-19.963</td>
@@ -8921,7 +8921,7 @@
       <td>Ice Cadet</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-1.61">-1.61</td>
@@ -8954,7 +8954,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-21.907">-21.907</td>
@@ -8987,7 +8987,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-7.861">-7.861</td>
@@ -9020,7 +9020,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-21.756">-21.756</td>
@@ -9053,7 +9053,7 @@
       <td>Ice Cadet</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-4.211">-4.211</td>
@@ -9086,7 +9086,7 @@
       <td>Ice Cadet</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="2.838">2.838</td>
@@ -9119,7 +9119,7 @@
       <td>Ice Cadet</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="2.667">2.667</td>
@@ -9152,7 +9152,7 @@
       <td>Ice Cadet</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-1.166">-1.166</td>
@@ -9317,7 +9317,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.435">10.435</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-9.812">-9.812</td>
@@ -9350,7 +9350,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.849">9.849</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.38">-5.38</td>
@@ -9449,7 +9449,7 @@
       <td>DAMP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.237">2.237</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-16.065">-16.065</td>
@@ -9482,7 +9482,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="14.35">14.35</td>
@@ -9515,7 +9515,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-8.064">-8.064</td>
@@ -9548,7 +9548,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="22.865">22.865</td>
@@ -9779,7 +9779,7 @@
       <td>Thermistor</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="8.699">8.699</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -9812,7 +9812,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -9845,7 +9845,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.849">9.849</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-10.481">-10.481</td>
@@ -9878,7 +9878,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.849">9.849</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-10.604">-10.604</td>
@@ -9911,7 +9911,7 @@
       <td>Thermistor</td>
       <td data-order="-7.831">-7.831</td>
       <td data-order="-7.03">-7.03</td>
-      <td data-order="4.460">4.460</td>
+      <td data-order="4.46">4.46</td>
       <td data-order="-19.38">-19.38</td>
       <td data-order="-1.19">-1.19</td>
       <td>No surface temperature sensors</td>
@@ -9944,7 +9944,7 @@
       <td>Thermistor</td>
       <td data-order="-1.526">-1.526</td>
       <td data-order="-1.53">-1.53</td>
-      <td data-order="1.770">1.770</td>
+      <td data-order="1.77">1.77</td>
       <td data-order="-5.12">-5.12</td>
       <td data-order="2.38">2.38</td>
       <td>No surface temperature sensors</td>
@@ -10208,7 +10208,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.849">9.849</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.393">-5.393</td>
@@ -10241,7 +10241,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.849">9.849</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-7.028">-7.028</td>
@@ -10274,7 +10274,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-8.79">-8.79</td>
@@ -10307,7 +10307,7 @@
       <td>APL</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.865">10.865</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="1.975">1.975</td>
@@ -10340,7 +10340,7 @@
       <td>APL</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="7.390">7.390</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-4.54">-4.54</td>
@@ -10373,7 +10373,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.119">9.119</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-9.906">-9.906</td>
@@ -10406,7 +10406,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.363">12.363</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.955">-5.955</td>
@@ -10439,7 +10439,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-1.959">-1.959</td>
@@ -10472,7 +10472,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.363">12.363</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-12.367">-12.367</td>
@@ -10505,7 +10505,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.849">9.849</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-4.243">-4.243</td>
@@ -10538,7 +10538,7 @@
       <td>APL</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.865">10.865</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-0.232">-0.232</td>
@@ -10571,7 +10571,7 @@
       <td>IT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.435">10.435</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-6.494">-6.494</td>
@@ -10604,7 +10604,7 @@
       <td>IT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.435">10.435</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-10.126">-10.126</td>
@@ -10637,7 +10637,7 @@
       <td>IT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="24.523">24.523</td>
@@ -10670,7 +10670,7 @@
       <td>IT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="0.335">0.335</td>
@@ -10703,7 +10703,7 @@
       <td>IT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-1.73">-1.73</td>
@@ -10736,7 +10736,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-9.538">-9.538</td>
@@ -10769,7 +10769,7 @@
       <td>IT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-8.274">-8.274</td>
@@ -10802,7 +10802,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="4.748">4.748</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-9.536">-9.536</td>
@@ -10835,7 +10835,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-1.732">-1.732</td>
@@ -10868,7 +10868,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.849">9.849</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-6.843">-6.843</td>
@@ -10901,7 +10901,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="5.975">5.975</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.689">-5.689</td>
@@ -10967,7 +10967,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="5.975">5.975</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-1.202">-1.202</td>
@@ -11000,7 +11000,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.535">9.535</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-3.859">-3.859</td>
@@ -11033,7 +11033,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="5.975">5.975</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="0.44">0.44</td>
@@ -11099,7 +11099,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.944">6.944</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-4.432">-4.432</td>
@@ -11132,7 +11132,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.119">9.119</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-3.517">-3.517</td>
@@ -11165,7 +11165,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.824">10.824</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-16.924">-16.924</td>
@@ -11198,7 +11198,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.119">9.119</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-2.452">-2.452</td>
@@ -11231,7 +11231,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.119">9.119</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-2.771">-2.771</td>
@@ -11264,7 +11264,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.119">9.119</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.714">-5.714</td>
@@ -11297,7 +11297,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.620">6.620</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-1.981">-1.981</td>
@@ -11330,7 +11330,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="5.582">5.582</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="6.94">6.94</td>
@@ -11363,7 +11363,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="3.438">3.438</td>
@@ -11396,7 +11396,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="10.476">10.476</td>
@@ -11429,7 +11429,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-2.492">-2.492</td>
@@ -11462,7 +11462,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.368">-5.368</td>
@@ -11495,7 +11495,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.057">6.057</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.993">-5.993</td>
@@ -11528,7 +11528,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.057">6.057</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.428">-5.428</td>
@@ -11561,7 +11561,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-4.785">-4.785</td>
@@ -11594,7 +11594,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.057">6.057</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-6.504">-6.504</td>
@@ -11627,7 +11627,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.057">6.057</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-4.757">-4.757</td>
@@ -11660,7 +11660,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.363">12.363</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-6.573">-6.573</td>
@@ -11693,7 +11693,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.119">9.119</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-6.573">-6.573</td>
@@ -11726,7 +11726,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.314">-5.314</td>
@@ -11759,7 +11759,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-0.311">-0.311</td>
@@ -11792,7 +11792,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-0.757">-0.757</td>
@@ -11825,7 +11825,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.145">-5.145</td>
@@ -11858,7 +11858,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -11891,7 +11891,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-0.482">-0.482</td>
@@ -11924,7 +11924,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="4.748">4.748</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="8.023">8.023</td>
@@ -11957,7 +11957,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-6.048">-6.048</td>
@@ -11990,7 +11990,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.975">3.975</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="9.251">9.251</td>
@@ -12023,7 +12023,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="4.748">4.748</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="8.157">8.157</td>
@@ -12056,7 +12056,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.077">10.077</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="7.397">7.397</td>
@@ -12089,7 +12089,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.535">-5.535</td>
@@ -12155,7 +12155,7 @@
       <td>Thermistor</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.056">6.056</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -12188,7 +12188,7 @@
       <td>Thermistor</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.975">3.975</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -12254,7 +12254,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="11.876">11.876</td>
@@ -12287,7 +12287,7 @@
       <td>Thermistor</td>
       <td data-order="-8.675">-8.675</td>
       <td data-order="-8.06">-8.06</td>
-      <td data-order="6.620">6.620</td>
+      <td data-order="6.62">6.62</td>
       <td data-order="-29.19">-29.19</td>
       <td data-order="5.19">5.19</td>
       <td>No surface temperature sensors</td>
@@ -12320,7 +12320,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.572">10.572</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="1.949">1.949</td>
@@ -12353,7 +12353,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.119">9.119</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="12.286">12.286</td>
@@ -12386,7 +12386,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.272">-5.272</td>
@@ -12452,7 +12452,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-9.2">-9.2</td>
@@ -12485,7 +12485,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.435">10.435</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-3.123">-3.123</td>
@@ -12584,7 +12584,7 @@
       <td>Thermistor</td>
       <td data-order="-6.858">-6.858</td>
       <td data-order="-7.06">-7.06</td>
-      <td data-order="5.540">5.540</td>
+      <td data-order="5.54">5.54</td>
       <td data-order="-21.69">-21.69</td>
       <td data-order="2.5">2.5</td>
       <td>No surface temperature sensors</td>
@@ -12617,7 +12617,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-6.95">-6.95</td>
@@ -12650,7 +12650,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.057">6.057</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-3.629">-3.629</td>
@@ -12683,7 +12683,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="0.845">0.845</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-6.069">-6.069</td>
@@ -12716,7 +12716,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="0.845">0.845</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.613">-5.613</td>
@@ -12749,7 +12749,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.056">6.056</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-2.77">-2.77</td>
@@ -12782,7 +12782,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.435">10.435</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-6.805">-6.805</td>
@@ -12815,7 +12815,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.056">6.056</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-10.425">-10.425</td>
@@ -12914,7 +12914,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="0.845">0.845</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-2.941">-2.941</td>
@@ -12947,7 +12947,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-3.646">-3.646</td>
@@ -13013,7 +13013,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-7.067">-7.067</td>
@@ -13046,7 +13046,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.119">9.119</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-4.207">-4.207</td>
@@ -13112,7 +13112,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="7.390">7.390</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-1.467">-1.467</td>
@@ -13145,7 +13145,7 @@
       <td>AXIB</td>
       <td data-order="-15.182">-15.182</td>
       <td data-order="-16.8">-16.8</td>
-      <td data-order="11.830">11.830</td>
+      <td data-order="11.83">11.83</td>
       <td data-order="-40.5">-40.5</td>
       <td data-order="8.4">8.4</td>
       <td data-order="0.086">0.086</td>
@@ -13244,7 +13244,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.435">10.435</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-8.277">-8.277</td>
@@ -13409,7 +13409,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.435">10.435</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-6.081">-6.081</td>
@@ -13475,7 +13475,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.057">6.057</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-0.947">-0.947</td>
@@ -13508,7 +13508,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.057">6.057</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-7.822">-7.822</td>
@@ -13541,7 +13541,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.435">10.435</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="8.416">8.416</td>
@@ -13574,7 +13574,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.890">3.890</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="2.329">2.329</td>
@@ -13640,7 +13640,7 @@
       <td>UT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.925">3.925</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -13673,7 +13673,7 @@
       <td>UT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -13706,7 +13706,7 @@
       <td>UT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.975">3.975</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -13739,7 +13739,7 @@
       <td>UT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.975">3.975</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -13772,7 +13772,7 @@
       <td>UT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.553">12.553</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -13805,7 +13805,7 @@
       <td>UT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="0.845">0.845</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -13838,7 +13838,7 @@
       <td>UT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -13871,7 +13871,7 @@
       <td>UT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -13904,7 +13904,7 @@
       <td>UT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -13937,7 +13937,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-13.099">-13.099</td>
@@ -13970,7 +13970,7 @@
       <td>UT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -14003,7 +14003,7 @@
       <td>UT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -14036,7 +14036,7 @@
       <td>IT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.865">10.865</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="0.418">0.418</td>
@@ -14069,7 +14069,7 @@
       <td>UT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="4.748">4.748</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -14102,7 +14102,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-2.635">-2.635</td>
@@ -14135,7 +14135,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-12.739">-12.739</td>
@@ -14168,7 +14168,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-12.067">-12.067</td>
@@ -14201,7 +14201,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="7.390">7.390</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-6.305">-6.305</td>
@@ -14234,7 +14234,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-16.542">-16.542</td>
@@ -14267,7 +14267,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-17.571">-17.571</td>
@@ -14300,7 +14300,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-12.51">-12.51</td>
@@ -14333,7 +14333,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-16.079">-16.079</td>
@@ -14366,7 +14366,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="7.390">7.390</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-8.731">-8.731</td>
@@ -14399,7 +14399,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.056">6.056</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-11.166">-11.166</td>
@@ -14432,7 +14432,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.975">3.975</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-6.857">-6.857</td>
@@ -14465,7 +14465,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-12.869">-12.869</td>
@@ -14498,7 +14498,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-19.3">-19.3</td>
@@ -14531,7 +14531,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-11.705">-11.705</td>
@@ -14564,7 +14564,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-10.6">-10.6</td>
@@ -14597,7 +14597,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-7.411">-7.411</td>
@@ -14630,7 +14630,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-4.685">-4.685</td>
@@ -14663,7 +14663,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-4.618">-4.618</td>
@@ -14696,7 +14696,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-1.382">-1.382</td>
@@ -14729,7 +14729,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-7.372">-7.372</td>
@@ -14762,7 +14762,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-6.527">-6.527</td>
@@ -14795,7 +14795,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.056">6.056</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.043">-5.043</td>
@@ -14828,7 +14828,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-2.794">-2.794</td>
@@ -14861,7 +14861,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-13.482">-13.482</td>
@@ -14894,7 +14894,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-3.495">-3.495</td>
@@ -14927,7 +14927,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-7.77">-7.77</td>
@@ -14960,7 +14960,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="15.463">15.463</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-15.441">-15.441</td>
@@ -14993,7 +14993,7 @@
       <td>DAMP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.944">6.944</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-12.726">-12.726</td>
@@ -15026,7 +15026,7 @@
       <td>APL</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="8.899">8.899</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-13.467">-13.467</td>
@@ -15059,7 +15059,7 @@
       <td>UT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.242">13.242</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -15092,7 +15092,7 @@
       <td>SVP</td>
       <td data-order="-4.297">-4.297</td>
       <td data-order="-3.6">-3.6</td>
-      <td data-order="3.890">3.890</td>
+      <td data-order="3.89">3.89</td>
       <td data-order="-11.1">-11.1</td>
       <td data-order="4.8">4.8</td>
       <td data-order="-3.566">-3.566</td>
@@ -15224,7 +15224,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="8.154">8.154</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-0.414">-0.414</td>
@@ -15257,7 +15257,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="5.266">5.266</td>
@@ -15290,7 +15290,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="6.155">6.155</td>
@@ -15323,7 +15323,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="8.154">8.154</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="2.804">2.804</td>
@@ -15356,7 +15356,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="8.154">8.154</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="2.64">2.64</td>
@@ -15389,7 +15389,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="8.154">8.154</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="3.511">3.511</td>
@@ -15422,7 +15422,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="8.154">8.154</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="4.624">4.624</td>
@@ -15455,7 +15455,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="8.154">8.154</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="4.724">4.724</td>
@@ -15488,7 +15488,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.214">-5.214</td>
@@ -15521,7 +15521,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-4.391">-4.391</td>
@@ -15554,7 +15554,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-2.031">-2.031</td>
@@ -15587,7 +15587,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-11.118">-11.118</td>
@@ -15620,7 +15620,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.432">-5.432</td>
@@ -15653,7 +15653,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-3.503">-3.503</td>
@@ -15686,7 +15686,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-6.951">-6.951</td>
@@ -15719,7 +15719,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-4.013">-4.013</td>
@@ -15752,7 +15752,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-15.261">-15.261</td>
@@ -15785,7 +15785,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-12.464">-12.464</td>
@@ -15818,7 +15818,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-10.267">-10.267</td>
@@ -15851,7 +15851,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-0.702">-0.702</td>
@@ -15884,7 +15884,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-23.672">-23.672</td>
@@ -15917,7 +15917,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-24.211">-24.211</td>
@@ -15950,7 +15950,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-8.279">-8.279</td>
@@ -15983,7 +15983,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.571">-5.571</td>
@@ -16016,7 +16016,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-5.017">-5.017</td>
@@ -16049,7 +16049,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-13.299">-13.299</td>
@@ -16082,7 +16082,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-12.888">-12.888</td>
@@ -16115,7 +16115,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-10.8">-10.8</td>
@@ -16148,7 +16148,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="7.3">7.3</td>
@@ -16181,7 +16181,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="6.927">6.927</td>
@@ -16214,7 +16214,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="4.7">4.7</td>
@@ -16247,7 +16247,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-21.271">-21.271</td>
@@ -16280,7 +16280,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-9.365">-9.365</td>
@@ -16313,7 +16313,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -16346,7 +16346,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-17.66">-17.66</td>
@@ -16379,7 +16379,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -16412,7 +16412,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -16445,7 +16445,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -16478,7 +16478,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.865">10.865</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -16511,7 +16511,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="0.503">0.503</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-12.036">-12.036</td>
@@ -16544,7 +16544,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="0.503">0.503</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-9.105">-9.105</td>
@@ -16577,7 +16577,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="0.503">0.503</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-11.84">-11.84</td>
@@ -16610,7 +16610,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.535">9.535</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-13.831">-13.831</td>
@@ -16643,7 +16643,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="5.743">5.743</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-13.148">-13.148</td>
@@ -16676,7 +16676,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.535">9.535</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-9.417">-9.417</td>
@@ -16709,7 +16709,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="5.743">5.743</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-10.571">-10.571</td>
@@ -16742,7 +16742,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="5.972">5.972</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-7.931">-7.931</td>
@@ -16775,7 +16775,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="5.975">5.975</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-2.079">-2.079</td>
@@ -16808,7 +16808,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="5.743">5.743</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-9.527">-9.527</td>
@@ -16841,7 +16841,7 @@
       <td>SVP</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="5.972">5.972</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-3.083">-3.083</td>
@@ -17006,7 +17006,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="8.984">8.984</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -17072,7 +17072,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-20.078">-20.078</td>
@@ -17105,7 +17105,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-22.338">-22.338</td>
@@ -17138,7 +17138,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-19.378">-19.378</td>
@@ -17171,7 +17171,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-22.624">-22.624</td>
@@ -17204,7 +17204,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-19.667">-19.667</td>
@@ -17237,7 +17237,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -17270,7 +17270,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-1.15">-1.15</td>
@@ -17303,7 +17303,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-24.958">-24.958</td>
@@ -17336,7 +17336,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-9.418">-9.418</td>
@@ -17369,7 +17369,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-11.112">-11.112</td>
@@ -17402,7 +17402,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-21.98">-21.98</td>
@@ -17435,7 +17435,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-11.586">-11.586</td>
@@ -17468,7 +17468,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-23.928">-23.928</td>
@@ -17501,7 +17501,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-25.526">-25.526</td>
@@ -17534,7 +17534,7 @@
       <td>Ice Ball</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.047">13.047</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-21.662">-21.662</td>
@@ -18095,7 +18095,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.001">9.001</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18128,7 +18128,7 @@
       <td>SPOT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.001">9.001</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18161,7 +18161,7 @@
       <td>SPOT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.865">10.865</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18194,7 +18194,7 @@
       <td>SPOT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.865">10.865</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18227,7 +18227,7 @@
       <td>SPOT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.865">10.865</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18260,7 +18260,7 @@
       <td>SPOT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.865">10.865</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18293,7 +18293,7 @@
       <td>SPOT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.865">10.865</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18326,7 +18326,7 @@
       <td>SPOT</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.903">2.903</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18359,7 +18359,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.237">2.237</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-1.588">-1.588</td>
@@ -18392,7 +18392,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="11.301">11.301</td>
+      <td></td>
       <td></td>
       <td></td>
       <td data-order="-1.55">-1.55</td>
@@ -18425,7 +18425,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="13.383">13.383</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18458,7 +18458,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="9.535">9.535</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18491,7 +18491,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="29.425">29.425</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18524,7 +18524,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="28.368">28.368</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18557,7 +18557,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="28.368">28.368</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18590,7 +18590,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18623,7 +18623,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.938">3.938</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18656,7 +18656,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="3.938">3.938</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18689,7 +18689,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18722,7 +18722,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18755,7 +18755,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18788,7 +18788,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18821,7 +18821,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18854,7 +18854,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="12.760">12.760</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18887,7 +18887,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.057">6.057</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18920,7 +18920,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.237">2.237</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18953,7 +18953,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.057">6.057</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -18986,7 +18986,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.057">6.057</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -19019,7 +19019,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.572">10.572</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -19052,7 +19052,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.572">10.572</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -19085,7 +19085,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.435">10.435</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -19118,7 +19118,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="11.830">11.830</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -19151,7 +19151,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="2.237">2.237</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -19184,7 +19184,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="5.743">5.743</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -19217,7 +19217,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="8.123">8.123</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -19250,7 +19250,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.057">6.057</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -19283,7 +19283,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="6.057">6.057</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -19316,7 +19316,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.572">10.572</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -19349,7 +19349,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.572">10.572</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -19382,7 +19382,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="10.572">10.572</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -19415,7 +19415,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="5.975">5.975</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -19448,7 +19448,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="5.975">5.975</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -19481,7 +19481,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="5.975">5.975</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
@@ -19514,7 +19514,7 @@
       <td>Other</td>
       <td>No air temperture sensors</td>
       <td></td>
-      <td data-order="5.975">5.975</td>
+      <td></td>
       <td></td>
       <td></td>
       <td>No surface temperature sensors</td>
